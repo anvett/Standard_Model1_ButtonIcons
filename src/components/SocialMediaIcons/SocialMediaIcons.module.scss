@@ -1,0 +1,27 @@
+@import "../../styles/variables.scss";
+
+
+
+.socialIcon {
+    
+    transition: transform 0.3s ease, opacity 0.3s ease;
+  
+    &:hover {
+      transform: scale(1.1); 
+      opacity: 0.8; 
+    }
+
+    .imageIcon{
+      border-radius: 10px;
+    }
+  }
+  
+.socialIconsContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    //padding-top: $spacing-5;
+    gap: $spacing-5;
+
+
+}

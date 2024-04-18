@@ -1,0 +1,60 @@
+@import '../../styles/variables.scss'; // Importa variables globales si las tienes
+
+.contactIconsContainer {
+  padding: 20px 0; // Añade padding vertical para separación
+}
+
+.contactIconsRow {
+  justify-content: center; // Centra los elementos horizontalmente en la fila
+}
+
+.contactIconsCol {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; // Centra los botones en la columna
+  gap: 5px; // Espacio entre botones
+}
+
+.contactIconButton {
+  display: flex;
+  align-items: center; // Alinea verticalmente el contenido del botón
+  justify-content: flex-start; // Alinea el contenido a la izquierda
+  width: calc(50% - 10px); // Asegura dos botones por fila con el espacio adecuado
+  margin: 10px 0; // Margen vertical para cada botón
+  padding: 9px; // Padding interno
+  background-color: $light-color;
+  color: $primary-color;
+  font-family: $font-secondary;
+  border-radius: 35px;  
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+
+  &:hover {
+    background-color: darken($primary-color, 10%); // Oscurece el color en hover
+    color: $light-color;
+  }
+}
+
+.icon {
+  margin-right: 10px; // Espacio entre el ícono y el título
+  width: 40px;
+  height: 40px;
+}
+
+.iconTitle {
+  font-size: 1.2rem;; // Tamaño de fuente para los títulos
+}
+
+@media (max-width: 575px) {
+  .contactIconButton {
+    width: calc(50% - 10px); // Mantén dos botones por fila incluso en pantallas pequeñas
+  }
+}
+
+@media (min-width: 576px) {
+  .contactIconsCol {
+    max-width: 576px; // Limita el ancho máximo de la columna de botones
+    margin: auto; // Asegura que la columna esté centrada
+  }
+}

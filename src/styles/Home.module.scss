@@ -1,0 +1,79 @@
+@import "../styles/variables.scss";
+
+// ---------------------------------------------
+// Main container
+// ---------------------------------------------
+.mainContainer {
+  min-height: calc(100vh - 190px);
+  width: 100%;
+}
+
+// ---------------------------------------------
+// Profile Section
+// ---------------------------------------------
+.profileSection {
+  background-color: $primary-color;
+  width: 100%;
+
+  //---------------------------------------------
+  // Profile Image Section
+  //---------------------------------------------
+  .ProfileImageSection {
+    padding-bottom: 30px;
+  }
+
+  //---------------------------------------------
+  // Profile Info Section
+  //---------------------------------------------
+
+  //---------------------------------------------
+  // Contact Buttons Section
+  //---------------------------------------------
+  .contactButtonsSection {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+}
+
+// ---------------------------------------------
+// Image Gallery Section
+// ---------------------------------------------
+
+.imageGallerySection {
+  background-color: $primary-color;
+  width: 100%;
+  padding-top: 30px;
+  padding-bottom: 30px;
+
+}
+
+.galleryTitle {
+  font-family: $font-primary;
+  font-size: 2.5rem;
+  color: $light-color;
+  text-align: center;
+  margin-bottom: $spacing-4;
+}
+.galleryDescription {
+  color: $light-color;
+  text-align: center;
+  font-size: 1.5rem;
+  font-family: $font-secondary;
+}
+
+// ---------------------------------------------
+// Video Player Section
+// ---------------------------------------------
+
+.videoPlayer {
+  background-color: $primary-color;
+  width: 100%;
+}
+
+// ---------------------------------------------
+// QR Code Section
+// ---------------------------------------------
+
+.qrCode {
+  background-color: $light-color;
+}

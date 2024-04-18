@@ -1,0 +1,148 @@
+@import "../styles/variables.scss";
+
+.mainContainer {
+ 
+  min-height: calc(100vh - 190px); 
+  width: 100%; 
+}
+
+
+
+.infoCol {
+  overflow: scroll;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border: solid 5px $primary-color;
+  background-image: url("/images/background_2.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100%;
+  
+}  
+
+
+
+// .infoCol2 {
+//   background-color: $primary-color;
+//   color: $secondary-color;
+//   display: flex;
+//   flex-direction: column;
+//   justify-content: center;
+//   align-items: stretch;
+// }
+
+.imageSection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 70%;
+  height: auto;
+  overflow: hidden;
+
+  .backgroundImage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+  
+}
+
+.educationSection{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: $spacing-4;
+  width: 100%;
+  height: auto;
+  background-color: $primary-color;
+
+  .educationTitle {
+    font-family: $font-primary;
+    font-size: 0.8rem;
+    color: $light-color;
+    text-align: center;
+    margin-bottom: $spacing-4;
+  }
+}
+
+
+
+.workExperience{
+  background-color: $light-color;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: $spacing-4;
+  width: 100%;
+  height: auto;
+
+  
+}
+
+.imageGallery{
+  justify-content: center;
+  padding: $spacing-1;
+  width: 100%;
+  height: auto;
+  background-color: $primary-color;
+
+}
+
+.paymentSection{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: $spacing-4;
+  width: 100%;
+  height: auto;
+  background-color: $light-color;
+
+}
+
+.paymentInfo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: $spacing-4;
+  width: 100%;
+  height: auto;
+
+  .paymentTitle {
+    font-family: $font-primary;
+    font-size: 0.8rem;
+    color: $primary-color;
+    text-align: center;
+    margin-bottom: $spacing-4;
+  }
+
+  .bankInfo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: $spacing-8;
+    width: 100%;
+    height: auto;
+
+    border-radius: 50%;
+  }
+}
+
+.videoPlayer{
+  
+  background-color: $primary-color;
+  width: 100%;
+}
+
+.qrCode {
+  background-color: $light-color;
+  
+}
